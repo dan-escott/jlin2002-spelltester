@@ -40,7 +40,7 @@ const Editor = () => {
     const styles = useStyles();
     const handleSubmit = (e) => {
         e.preventDefault();
-        const words = rawText.split('\n').filter((word) => word !== '').map((word) => word.replaceAll(/^\s*|\s*$/g, ''));
+        const words = rawText.split('\n').filter((word) => word !== '').map((word) => word.replace(/^\s*|\s*$/g, ''));
         setQuizzes((prevQuizzes) => {
             return {
                 ...prevQuizzes,
