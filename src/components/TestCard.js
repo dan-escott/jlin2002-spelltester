@@ -8,8 +8,7 @@ const useStyles = makeStyles({
     card: {
         margin: '2rem 3rem',
         height: '13rem',
-        maxWidth: '15rem',
-        minWidth: '13rem',
+        width: '13rem',
         position: 'relative',
         borderRadius: '1rem',
         textDecoration: 'none'
