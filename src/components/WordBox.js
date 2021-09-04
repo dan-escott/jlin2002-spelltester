@@ -11,6 +11,10 @@ const useStyles = makeStyles({
         justifyContent: 'space-between',
         alignItems: 'center'
     },
+    word: {
+        width: '9rem',
+        overflowWrap: 'break-word'
+    },
     circularProgress: {
         padding: '0.6rem'
     }
@@ -42,7 +46,7 @@ const WordBox = ({word}) => {
     }, [word])
     return (
         <Card className={styles.wordCard}>
-            <Typography variant='h6'>{word}</Typography>
+            <Typography className={styles.word} variant='h6'>{word}</Typography>
             {requestComplete ?
                 <IconButton onClick={() => audio.current.play()}>
                     <VolumeUpIcon fontSize='large'/>

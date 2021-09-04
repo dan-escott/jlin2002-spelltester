@@ -1,7 +1,7 @@
 const axios = require('axios');
 exports.handler = async(event, context) => {
     try {
-        const response = await axios.post("https://texttospeech.googleapis.com/v1/text:synthesize?key=" + process.env.TTS_API_KEY, {
+        const response = await axios.post("https://texttospeech.googleapis.com/v1/text:synthesize?key=" + "AIzaSyAauwehNNLAo9FG669L15LBLvsz5h0f48k", {
             "audioConfig": {
                 "audioEncoding": "LINEAR16",
                 "pitch": 0.1,
