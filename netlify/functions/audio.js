@@ -5,7 +5,7 @@ exports.handler = async(event, context) => {
             "audioConfig": {
                 "audioEncoding": "LINEAR16",
                 "pitch": 0.1,
-                "speakingRate": 0.85
+                "speakingRate": 0.9
             },
             "input": {
                 "text": JSON.parse(event.body).word

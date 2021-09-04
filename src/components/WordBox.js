@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         alignItems: 'center'
     },
     circularProgress: {
-        padding: '1rem'
+        padding: '0.6rem'
     }
 })
 const WordBox = ({word}) => {
@@ -47,7 +47,7 @@ const WordBox = ({word}) => {
                 <IconButton onClick={() => audio.current.play()}>
                     <VolumeUpIcon fontSize='large'/>
                 </IconButton>:
-                <CircularProgress fontSize='large' />
+                <CircularProgress className={styles.circularProgress} fontSize='large' />
             }
         </Card>
     )
