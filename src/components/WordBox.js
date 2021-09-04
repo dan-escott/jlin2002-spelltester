@@ -39,7 +39,7 @@ const WordBox = ({word}) => {
         .catch((err) => {
             console.log(err);
         })
-    }, [])
+    }, [word])
     return (
         <Card className={styles.wordCard}>
             <Typography variant='h6'>{word}</Typography>
