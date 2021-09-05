@@ -24,7 +24,7 @@ const Home = () => {
             <AppBar position="static">
                 <Toolbar className={styles.topBar}  variant="dense">
                     <Typography variant='h5'> 
-                        Saved Tests
+                        SpellTester
                     </Typography>
                     <IconButton className={styles.iconButton} component={Link} to='/editor'>
                         <AddIcon aria-label='create new test' className={styles.icon} fontSize='large'/>

@@ -53,7 +53,7 @@ const Editor = () => {
         setFormCompleted(true);
     }
     const updateRawText = (e) => {
-        setRawText(e.target.value.replace(/^\s*/, '').replace(/\n\s*/g, '\n'));
+        setRawText(e.target.value);
     }
     const updateTitle = (e) => {
         setTitle(e.target.value)
